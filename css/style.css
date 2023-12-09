@@ -1,0 +1,80 @@
+/* ROOT */
+:root{
+    --header-height:50px;
+    --footer-height:30px;
+}
+
+/* RESET */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utils */
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+ul{
+    list-style: none;
+}
+ img{
+    max-width: 100%;
+ }
+li{
+    display: block;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* DEBUG */
+.debug{
+    min-height: 80px;
+    background-color: grey;
+    padding: 2rem;
+}
+/* WEBAPP */
+
+header{
+    height: var(--header-height);
+    background-color: yellow;
+}
+
+footer{
+    height: var(--footer-height);
+    background-color: red;
+}
+
+.wrapper{
+    height:calc(100vh - 50px - 30px);
+    background-color: grey;
+    overflow: hidden;
+    display: flex;
+}
+aside{
+    width: 30%;
+    overflow: scroll;
+}
+main{
+    width: 70%;
+    overflow: scroll;
+}
+aside li{
+    padding: 30px;
+    margin: 15px 0;
+    background-color: brown;
+}
+main section {
+    padding: 5rem 0;
+    background-color: whitesmoke;
+    overflow: scroll;
+}
+main section:nth-of-type(even){
+    background-color: white;
+}
